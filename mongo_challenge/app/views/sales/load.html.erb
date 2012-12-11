@@ -1,0 +1,6 @@
+<h1>Sales#load</h1>
+
+<%= form_tag({action: :process_file}, :multipart => true) do %>
+  <%= file_field_tag 'sales' %>
+  <%= submit_tag("Upload") %>
+<% end %>
